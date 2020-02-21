@@ -3,7 +3,12 @@
 	"displayName": "Fast Test",
 	"description": "Fast Test allows you to quickly run tests on your currently active file.",
 	"publisher": "bencomeau",
-	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"directory": "https://github.com/bencomeau/fast-test"
+	},
+	"homepage": "https://github.com/bencomeau/fast-test",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.42.0"
 	},
