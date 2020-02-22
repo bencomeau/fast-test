@@ -25,6 +25,12 @@ const getCurrentFile = (): string | undefined => {
 };
 
 /**
+ * Get the command which executes the test runner. No need to create a map yet as the config
+ * values match the CLI commands at the moment. Can expand this if needed in future.
+ */
+const testRunnerCommand: string = vscode.workspace.getConfiguration('fastTest').get('testRunner') || "jest";
+
+/**
  * Finds existing Fast Test terminal, if any.
  */
 const getTerminal = (): vscode.Terminal | undefined => vscode.window.terminals.find(({ name }) => name === EXTENSION_NAME);
@@ -46,7 +52,7 @@ export function activate(context: vscode.ExtensionContext) {
 		terminal.show(true);
 
 		// Send the command to the terminal
-		terminal.sendText(`npx jest ${file} --coverage=false`);
+		terminal.sendText(`npx ${testRunnerCommand} ${file} --coverage=false`);
 	}));
 
 	context.subscriptions.push(vscode.commands.registerCommand('extension.watch', () => {
@@ -64,7 +70,7 @@ export function activate(context: vscode.ExtensionContext) {
 		terminal.show(true);
 
 		// Send the command to the terminal
-		terminal.sendText(`npx jest ${file} --watch --coverage=false`);
+		terminal.sendText(`npx ${testRunnerCommand} ${file} --watch --coverage=false`);
 	}));
 }
 

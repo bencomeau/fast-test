@@ -31,13 +31,22 @@ While active on a test file:
 
 ## Extension Settings
 
-Coming soon (see **Roadmap** below)
+#### fastTest.testRunner (default: `jest`)
+Set the test runner used to run the tests. The default command for each runner is used (ie: `npx jest filename.js`).
 
 ## Release Notes
 
+### 1.3.0
+
+You can now set your preferred test runner in the configuration settings. In **Settings**, search `Fast Test` then select your desired test runner from the list.
+
+### 1.1.0
+
+Minor release to improve documentation including example videos.
+
 ### 1.0.0
 
-Initial release of Fast Test
+Initial release of Fast Test.
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -47,7 +56,6 @@ Initial release of Fast Test
 
 Add configuration settings to allow:
 
-- setting your test runner (ie: jest, mocha, etc)
 - default terminal (integrated or external)
 
 ### External Terminal Support

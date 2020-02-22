@@ -22,6 +22,25 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"configuration": [
+			{
+				"title": "%ext.config.title%",
+				"properties": {
+					"fastTest.testRunner": {
+						"scope": "resource",
+						"type": "string",
+						"enum": [
+							"ava",
+							"jasmine",
+							"jest",
+							"mocha"
+						],
+						"default": "jest",
+						"markdownDescription": "%ext.config.testRunner%"
+					}
+				}
+			}
+		],
 		"commands": [
 			{
 				"command": "extension.test",

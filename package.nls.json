@@ -1,0 +1,4 @@
+{
+  "ext.config.title": "Fast Test",
+  "ext.config.testRunner": "Set the test runner used to run the tests. The default command for each runner is used (ie: `npx jest filename.js`)."
+}
