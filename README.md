@@ -2,11 +2,28 @@
 
 Fast Test allows you to quickly run tests on your currently active file.
 
+![Test Current File Demo](/test-current-file.gif)
+
 ## Features
 
 - Run a single test on the currently active file.
+- Reuses any existing 'Fast Test' terminals to remain performant.
 - Watch the currently active file for changes and rerun tests related to changed files.
 - Does not run Coverage since the idea is to target development speed while writing tests.
+
+## Installation
+
+- Open Extensions View (`⇧⌘X` on Mac, `Ctrl+Shift+X` on Windows/Linux).
+- Search `bencomeau.fast-test`.
+- Select to install extension.
+
+## Usage
+
+While active on a test file:
+
+- Open the Command Palette (`⇧⌘P` on Mac, `Ctrl+Shift+P` on Windows/Linux).
+- Type `Fast Test` and select the desired option.
+- See test results in the terminal.
 
 ## Requirements
 
@@ -41,4 +58,12 @@ Allow the extension to execute the test commands to your preferred terminal.
 
 Ironically, I need to add tests.
 
-**Enjoy**
+-----------------------------------------------------------------------------------------------------------
+
+## Example Usage
+
+### Test Current File
+![Test Current File Demo](/test-current-file.gif)
+
+### Watch Current File
+![Watch Current File Demo](/watch-current-file.gif)
