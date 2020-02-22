@@ -1,4 +1,4 @@
-# fast-test README
+# Fast Test README
 
 Fast Test allows you to quickly run tests on your currently active file.
 
